@@ -298,6 +298,9 @@ type Chassis struct {
 	// manufacturer generally refers to the chassis.
 	Model           string
 	networkAdapters string
+	// Oem shall contain the OEM extensions. All values for properties that this object contains shall conform to the
+	// Redfish Specification-described requirements.
+	OEM json.RawMessage `json:"Oem"`
 	// PartNumber shall contain a part number assigned by
 	// the organization that is responsible for producing or manufacturing
 	// the chassis.
